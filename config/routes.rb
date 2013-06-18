@@ -1,7 +1,7 @@
 Template::Application.routes.draw do
   resources :examples
 
-  root :to => "main#index"
+  root :to => "examples#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
