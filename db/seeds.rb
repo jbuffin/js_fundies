@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Example.create(:title => 'Statements and Simple Types', :starting_point => "helper.write('Hello, JavaScript!')")

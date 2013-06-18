@@ -1,0 +1,38 @@
+<%= form_for(@example) do |f| %>
+  <% if @example.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@example.errors.count, "error") %> prohibited this example from being saved:</h2>
+
+      <ul>
+      <% @example.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="field span2">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="field span2">
+        <%= f.label :starting_point %>
+        <%= f.text_area :starting_point %>
+      </div>
+       <div class="field span2">
+        <%= f.label :available_functions %>
+        <%= f.text_area :available_functions %>
+      </div>
+</div>
+      <div class="row-fluid">
+       <div class="actions span2">
+        <%= f.submit %>
+      </div>
+      </div>
+    
+  </div>
+<% end %>

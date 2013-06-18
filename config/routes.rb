@@ -1,4 +1,8 @@
-JsFundies::Application.routes.draw do
+Template::Application.routes.draw do
+  resources :examples
+
+  root :to => "main#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
